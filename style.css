@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    --roxo-fundo: #830AD1;
+    --roxo-botao: #9C03FE;
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza-fundo: #F0F1F5;
+    --cinza-claro: #a5a8b1;
+    --cinza-escuro: #666a74;
+}   
+.cabecalho{
+    background-color: var(--roxo-fundo);
+    padding: 1rem;
+}
+main a{
+    text-decoration: none;
+    color: var(--preto);
+}
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.cab_left img{
+    width: 50px;
+}
+.cab_right img{
+    padding: 0.5rem;
+    width: 25px;
+}
+.nome_usuario h1{
+    color: var(--branco);
+    font-weight: 100;
+    font-size: 19px;
+    padding: 0.5rem 1rem;
+}
+.conta{
+    padding: 2rem 1.5rem 0;
+}
+.conta_flex_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.conta h2{
+    font-size: 20px;
+}
+.conta p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    padding: .8rem 0;
+}
+.botoes_grid_container{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: scroll;
+}
+.botoes_grid_container a{
+    color: var(--preto);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+.botoes_grid_container div{
+    text-align: center;
+}
+.botoes_grid_container img{
+    width: 85px;
+    padding: 0 .1rem
+}
+.meus_cartoes_container{
+    padding: .5rem 1.5rem 1.5rem;
+}
+.meus_cartoes_container button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--cinza-fundo);
+    border-radius: .5rem;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+.meus_cartoes_container i::before{
+    background-image: url(img/ícone_meus_cartoes.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 22px;
+}
+.meus_cartoes_container p{
+    padding: 0 1rem;
+}
+.meus_cartoes_container button:active{
+    background-color: #dddddd;
+}
+.cartao_credito{
+    border-top: 1px solid var(--cinza-claro);
+    padding: 1.5rem;
+}
+.cartao_flex_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.cartao_flex_container h2{
+    color: var(--cinza-claro);
+    font-size: 18px;
+    font-weight: 700;
+}
+.cartao_credito p{
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 16px;
+    padding: .5rem 0;
+}
+.cartao_credito button{
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--cinza-fundo);
+    outline: none;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.cartao_credito button:active{
+    background-color: #dddddd;
+}
+.emprestimo{
+    padding: 1.5rem;
+    border-top: 1px solid var(--cinza-claro);
+}
+.emprestimo_container_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.emprestimo p{
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    padding: 1rem 0 .5rem;
+}
+.investimentos{
+    padding: 1.5rem;
+    border-top: 1px solid var(--cinza-claro);
+}
+.investimentos_container_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.investimentos p{
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    padding: 1rem 0 .5rem;
+}
+.pedacinho_container button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--cinza-fundo);
+    border-radius: .5rem;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.pedacinho_container i::before{
+    background-image: url(img/icone_pedacinho.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 22px;
+}
+.pedacinho_container p{
+    color: var(--preto);
+    padding: 0 1rem;
+}
+.pedacinho_container button:active{
+    background-color: #dddddd;
+}
+.saldo_transf_container button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--cinza-fundo);
+    border-radius: .5rem;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.saldo_transf_container i::before{
+    background-image: url(img/icone_consulta_saldo_transferencia.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 18px;
+}
+.saldo_transf_container p{
+    color: var(--preto);
+    padding: 0 1rem;
+}
+.saldo_transf_container button:active{
+    background-color: #dddddd;
+}
+.seguros{
+    padding: 1.5rem;
+    border-top: 1px solid var(--cinza-claro);
+}
+.seguros_container_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.seguros p{
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    padding: 1rem 0 .5rem;
+}
+.seguro_vida_container button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--cinza-fundo);
+    border-radius: .5rem;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.seguro_vida_container i::before{
+    background-image: url(img/icone_seguro_vida.png);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 17px;
+}
+.seguro_vida_container p{
+    color: var(--preto);
+    padding: 0 1rem;
+}
+.seguro_vida_container button:active{
+    background-color: #dddddd;
+}
+.seguro_celular_container button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--cinza-fundo);
+    border-radius: .5rem;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem 0 0;
+}
+.seguro_celular_container i::before{
+    background-image: url(img/icone_seguro_celular.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 23px;
+}
+.seguro_celular_container p{
+    color: var(--preto);
+    padding: 0 1rem;
+}
+.seguro_celular_container button:active{
+    background-color: #dddddd;
+}
+.shopping{
+    padding: 1.5rem;
+    border-top: 1px solid var(--cinza-claro);
+}
+.shopping_container_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopping p{
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    padding: 1rem 0 .5rem;
+}
+.seguros span{
+    position: absolute;
+    right: 55px;
+    color: var(--roxo-botao);
+}
