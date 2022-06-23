@@ -4,6 +4,7 @@
 }
 :root{
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
     --roxo-fundo: #830AD1;
     --roxo-botao: #9C03FE;
     --branco: #ffffff;
@@ -28,15 +29,19 @@ main a{
     margin-bottom: 1rem;
 }
 .cab_left img{
-    width: 50px;
+    width: 60px;
+}
+.cab_right{
+    display: flex;
+    align-items: center;
 }
 .cab_right img{
-    padding: 0.5rem;
+    padding: 1rem;
     width: 25px;
 }
 .nome_usuario h1{
     color: var(--branco);
-    font-weight: 100;
+    font-weight: 700;
     font-size: 19px;
     padding: 0.5rem 1rem;
 }
@@ -97,9 +102,9 @@ main a{
 }
 .meus_cartoes_container i::before{
     background-image: url(img/ícone_meus_cartoes.png);
-    background-size: 20px;
+    background-size: 17px;
     background-repeat: no-repeat;
-    display: inline-block;
+    display: flex;
     content: "";
     width: 20px;
     height: 22px;
@@ -198,7 +203,7 @@ main a{
     display: inline-block;
     content: "";
     width: 20px;
-    height: 22px;
+    height: 20px;
 }
 .pedacinho_container p{
     color: var(--preto);
@@ -230,7 +235,7 @@ main a{
     display: inline-block;
     content: "";
     width: 20px;
-    height: 18px;
+    height: 13px;
 }
 .saldo_transf_container p{
     color: var(--preto);
@@ -272,7 +277,7 @@ main a{
 }
 .seguro_vida_container i::before{
     background-image: url(img/icone_seguro_vida.png);
-    background-size: 23px;
+    background-size: 20px;
     background-repeat: no-repeat;
     display: inline-block;
     content: "";
@@ -304,12 +309,12 @@ main a{
 }
 .seguro_celular_container i::before{
     background-image: url(img/icone_seguro_celular.png);
-    background-size: 20px;
+    background-size: 14px;
     background-repeat: no-repeat;
     display: inline-block;
     content: "";
-    width: 20px;
-    height: 23px;
+    width: 19px;
+    height: 21px;
 }
 .seguro_celular_container p{
     color: var(--preto);
